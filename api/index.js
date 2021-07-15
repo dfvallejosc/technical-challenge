@@ -27,7 +27,7 @@ app.get('/iecho', (req, res) => {
         } else {
             res.status(200).json({"text": reverseText});
         }
-                
+
     }
     catch {
         res.status(400).json({"error": "no text"});
@@ -35,3 +35,5 @@ app.get('/iecho', (req, res) => {
 })
 
 app.listen('3001')
+
+module.exports = app;
